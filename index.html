@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>إحياء</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--شريط التنقل-->
+    <header>
+      <nav id="nav">
+        <p><a href="index.html">الرئيسية</a></p>
+        <p><a href="#about">من نحن </a></p>
+      </nav>
+    </header>
+    <!--بوكس الفيديو-->
+    <div id="boxes">
+      <div class="HBox">
+        <h2>مرحبا أيها المغامر !</h2>
+        <h3>هاك بداية الطريق</h3>
+        <video controls id="video">
+          <source src="" type="video/mp4" />
+        </video>
+        <button class="btn" id="videobtn">
+          <a href="#kanz1box">انطلق للرحلة</a>
+        </button>
+      </div>
+      <main>
+        <!--بوكس الصندوق المقفل-->
+        <!--على شكل عرض تقديمي دوران-->
+        <div id="kanz1box" class="box">
+          <h2>جزيرة ؟</h2>
+          <h1>صندوق الكنز !</h1>
+          <p>هل تجدون هنا مبتغاكم ؟</p>
+          <!--بجافا يطلع اشعار تحتاج الى المفاتيح-->
+
+          <img src="images\kanz.png" alt="photo" class="kanzphoto" />
+
+          <button id="ebhathbtn" class="btn">
+            <a href="#kasrbox">ابحث عن المفاتيح</a>
+          </button>
+        </div>
+      </main>
+      <!--بوكس القصر-->
+
+      <div id="kasrbox" class="box">
+        <h2>بعد التجول في الأرجاء..</h2>
+        <h3>وجدتم قصرا مهيبا</h3>
+        <img src="images\kasr.jpg" alt="photo" class="kasrphoto" />
+        <button id="odkholbtn" class="btn">
+          <a href="kasr.html"> ادخل القصر</a>
+        </button>
+        <!--هنا الصفحة الجديدة-->
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

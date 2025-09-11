@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>إحياء</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <p><a href="index.html">الرئيسية</a></p>
+        <p><a href="#about">من نحن </a></p>
+      </nav>
+    </header>
+    <!--هنا خلفية جديدة لما داخل القصر-->
+    <main>
+      <!--هنا بوكس الابواب-->
+      <div id="abwabbox" class="box">
+        <h2>الكثير من الأبواب!</h2>
+        <img src="images\DOORS.jpg" alt="photo" class="abwabimg" />
+        <h3>جميعها مقفلة تماما</h3>
+        <h2>عدا ثلاثة أبواب ، تحتاج منك كتابة كلمة السر</h2>
+        <button id="eftahbtn1" class="btn">
+          <a href="#bab1box">افتح الباب الأول </a>
+        </button>
+      </div>
+
+      <!--بوكس الباب الاول-->
+      <div id="bab1box" class="box abwabbox">
+        <h1>الباب الأول</h1>
+        <div id="bab1img">
+          <img src="images\bab.jpg" alt="photo" class="bab1img" />
+        </div>
+        <div id="logz1img" class="logz">
+          <img src="images\logz1e.jpg" alt="photo" class="logz1img" />
+          <div id="logz1ans">
+            <p>مايفعله الطالب مع العلم -</p>
+          
+          <p>بداية كل معرفة -</p>
+        
+        <p>مرادف كلمة الاستقبال-</p>
+      
+            <input type="text" name="answer" id="answer" />
+            <input type="submit" id="send" name="send" value="إرسال" />
+            <p>الدين على منهاج النبوة(....)</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--هنا الخريطة-->
+    <div id="maalem1" style="display: none">
+      <div class="waraqa">
+        <h2> هنا ورقة عتيقة ، وُجدت بعد فتحكم الباب...</h2></br>
+        <h3> اقرأها لتعلم ،هل هي هنا لتدلكم إلى الطريق؟</h3>
+      </div>
+      <div class="tareef" id="tareef1">
+        <img src="images\tareef.jpg" alt="photo" />
+      </div>
+      <div id="kharita" class="kharita">
+        <div id="kharitaimg">
+          <img src="images\📍.png" alt="photo" class="kharitaimg" id="map"/>
+        
+        </div>
+          <div class="btns">
+            <button id="landmark1" class="inkharita m1" >🔻</button>
+            <button id="landmark2" class="inkharita m2" style="display: none;">🔻</button>
+            <button id="landmark3" class="inkharita m3"  style="display: none;">🔻</button><button id="landmark4" class="inkharita m4"  style="display: none;">🔻</button>
+            <button id="landmark5" class="inkharita m5"  style="display: none;" >🔻</button><button id="landmark6" class="inkharita m6"  style="display: none;">🔻</button>
+            <button id="landmark7" class="inkharita m7"  style="display: none;">🔻</button><button id="landmark8" class="inkharita m8"  style="display: none;">🔻</button>
+            <button id="landmark9" class="inkharita m9"  style="display: none;">🔻</button><button id="landmark10" class="inkharita m10"  style="display: none;">🔻</button
+            ><button id="landmark11" class="inkharita m11" style="display: none;">🔻</button><button id="landmark12" class="inkharita m12"  style="display: none;">🔻</button
+            ><button id="landmark13" class="inkharita m13"  style="display: none;">🔻</button><button id="landmark14"class="inkharita m14"  style="display: none;">🔻</button>
+            <p id="keygold" class="inkharita key1"  style="display: none;">🗝</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--الملخصات للمعالم التلقي + الاسئلة -->
+    <div id="modal" class="modal" style="display: none">
+      <!--مخفي-->
+      <div class="modal-content">
+      <span id="closeBtn" class="closebtn">x</span>
+      <img id="modal-img" class="mlkhsimg" src="gfg.png" />
+    
+      <!--نكتب السؤال في جافا-->
+      <p id = "modal-question" class="mlquiz"></p>
+      <div id="modal-answers">
+      </div>
+    </div>
+    </div>
+
+    <!--المفتاح الاول-->
+    <div id="correct" class="correct" style="display: none">
+     
+      <!--زر الانتقال للباب الثاني-->
+      <button class="btn" id="eftahbtn" onclick="eftah2()">
+        <a href="#bab2box">افتح الباب الثاني</a>
+      </button>
+    </div>
+
+    <!--الباب الثاني-->
+    <div id="bab2box" class="box abwabbox" style="display: none;">
+      <h1>الباب الثاني</h1>
+      <div id="bab2img">
+        <img src="images\bab.jpg" alt="photo" class="bab1img" />
+      </div>
+      <div id="logz2img" class="logz">
+        <img src="images\logz2.jpg" alt="photo" class="logz1img" />
+        <div id="logz2ans">
+          <p>عملية بناء الأخلاق والقيم -</p>
+      
+        <p>تنشئة الصغار على الفضائل تسمى -</p>
+      
+      <p>ضد الإهمال والرعاية الناقصة -</p>
+    
+          <input type="text" name="answer" id="answer2" />
+          <input type="submit" id="send2" name="send" value="إرسال" />
+          <p>المصلحين والحملة على منهاج النبوة(....)</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--هنا الخريطة-->
+  <div id="maalem2" style="display: none">
+   
+    <div class="tareef" id="tareef1">
+      <img src="images\tareeft.jpg" alt="photo" />
+    </div>
+    <div id="kharita" class="kharita">
+      <div id="kharitaimg">
+        <img src="images\📍 (14).png" alt="photo" class="kharitaimg" id="map2"/>
+      
+      </div>
+        <div class="btns">
+          <button id="tlandmark1" class="inkharita m1" >🔻</button>
+          <button id="tlandmark2" class="inkharita m2" style="display: none;">🔻</button>
+          <button id="tlandmark3" class="inkharita m3"  style="display: none;">🔻</button><button id="tlandmark4" class="inkharita m4"  style="display: none;">🔻</button>
+          <button id="tlandmark5" class="inkharita m5"  style="display: none;" >🔻</button><button id="tlandmark6" class="inkharita m6"  style="display: none;">🔻</button>
+          <button id="tlandmark7" class="inkharita m7"  style="display: none;">🔻</button><button id="tlandmark8" class="inkharita m8"  style="display: none;">🔻</button>
+          <button id="tlandmark9" class="inkharita m9"  style="display: none;">🔻</button><button id="tlandmark10" class="inkharita m10"  style="display: none;">🔻</button
+          ><button id="tlandmark11" class="inkharita m11" style="display: none;">🔻</button><button id="tlandmark12" class="inkharita m12"  style="display: none;">🔻</button
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--المفتاح الثاني-->
+    <div id="correct2" class="correct" style="display: none">
+   
+      <!--زر الانتقال للباب الثالث-->
+      <button class="btn" id="eftahbtn" onclick="eftah3()">
+        <a href="#bab3box"> افتح الباب الاخير</a>
+      </button>
+    </div>
+
+    <!--الباب الاخير-->
+    <div id="bab3box" class="box abwabbox" style="display: none;">
+      <h1>الباب الثالث</h1>
+      <div id="bab3img">
+        <img src="images\bab.jpg" alt="photo" class="bab1img" />
+      </div>
+      <div id="logz3img" class="logz">
+        <img src="images\logz3.jpg" alt="photo" class="logz1img" />
+        <div id="logz3ans">
+          <p> ضد الفساد - </p>
+        
+        <p>مايفعله الحَكَم بين المتخاصمين -</p>
+        
+        <p>مرادف الترميم أو التقويم -</p>
+    
+    
+          <input type="text" name="answer" id="answer3" />
+          <input type="submit" id="send3" name="send" value="إرسال" />
+          <p>على منهاج النبوة(....)</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--هنا الخريطة-->
+  <div id="maalem3" style="display: none">
+   
+    <div class="tareef" id="tareef1">
+      <img src="images\tareefs.jpg" alt="photo" />
+    </div>
+    <div id="kharita" class="kharita">
+      <div id="kharitaimg">
+        <img src="images\📍 (27).png" alt="photo" class="kharitaimg" id="map3"/>
+      
+      </div>
+        <div class="btns">
+          <button id="slandmark1" class="inkharita m1" >🔻</button>
+          <button id="slandmark2" class="inkharita m2" style="display: none;">🔻</button>
+          <button id="slandmark3" class="inkharita m3"  style="display: none;">🔻</button><button id="slandmark4" class="inkharita m4"  style="display: none;">🔻</button>
+          <button id="slandmark5" class="inkharita m5"  style="display: none;" >🔻</button><button id="slandmark6" class="inkharita m6"  style="display: none;">🔻</button>
+          <button id="slandmark7" class="inkharita m7"  style="display: none;">🔻</button><button id="slandmark8" class="inkharita m8"  style="display: none;">🔻</button>
+          <button id="slandmark9" class="inkharita m9"  style="display: none;">🔻</button><button id="slandmark10" class="inkharita m10"  style="display: none;">🔻</button
+          ><button id="slandmark11" class="inkharita m11" style="display: none;">🔻</button><button id="slandmark12" class="inkharita m12"  style="display: none;">🔻</button
+          ><button id="slandmark13" class="inkharita m2" style="display: none;">🔻</button>
+          <button id="slandmark14" class="inkharita m2" style="display: none;">🔻</button>
+          <button id="slandmark15" class="inkharita m2" style="display: none;">🔻</button>
+          <button id="slandmark16" class="inkharita m2" style="display: none;">🔻</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--بوكس الملخص -->
+    <div class="mlkhsbox" style="display: none">
+      <!--مخفي-->
+      <button class="closebtn">close</button>
+      <img class="mlkhsimg" src="gfg" />
+      <button class="btn" class="quizbtn">أجب عن السؤال</button>
+      <!--نكتب السؤال في جافا-->
+      <p class="quiz"></p>
+      <input type="radio" name="mm" value="mm" />
+      <input type="submit" value="تحقق" />
+    </div>
+    <!--المفتاح الاخير-->
+    <div id="end" style="display: none">
+   
+      <!--زر الانتقال للكنز-->
+      <button class="btn" id="entakelbtn" onclick="entakel()">
+        <a href="#kanzbox">انتقل إلى صندوق الكنز</a>
+      </button>
+    </div>
+    <!--الكنز المفتوح -->
+    <div id="kanzbox" >
+      <h1>مبارك!!! فتحت صندوق الكنز</h1>
+      <img src="openkanz.png" class="openkanz" />
+      <button class="btn" id="openkanz-btn">
+        <a href="#kanz">احصل على الكنز من هنا </a>
+      </button>
+    </div>
+    <!--مخفي-->
+    <!--ما داخل الصندوق-->
+    <div id="kanz" >
+      <button id="closebtn">close</button>
+      <img src="ns.jpg">
+    </div>
+    <!--الروابط عندما اجهزها-->
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
