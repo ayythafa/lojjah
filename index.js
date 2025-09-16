@@ -618,7 +618,6 @@ let slandmarks = [
     id: "correct3",
     question: "مبارك! حصلت على المفتاح الثالث",
     options: [],
-  
   },
 ];
 
@@ -639,7 +638,6 @@ function openModal(slandmark) {
         if (slandmark.next) {
           document.getElementById(slandmark.next).style.display =
             "inline-block";
-            document.getElementById("end").style.display="block";
         }
         document.getElementById("map").src = slandmark.nextMap;
       } else {
@@ -659,3 +657,7 @@ slandmarks.forEach((l) => {
 closeBtn.onclick = () => {
   modal.style.display = "none";
 };
+let end = document.getElementById("end");
+document.getElementById("slandmark16").addEventListener("click", function () {
+  end.style.disply = "block";
+});
